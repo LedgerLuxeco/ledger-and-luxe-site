@@ -517,8 +517,8 @@ section {
   transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease, filter .25s ease;
 }
 
-/* Hover: subtle lift + gold glow */
-.btn:hover,
+/* Hover: subtle lift + gold glow (primary buttons only) */
+.btn:not(.secondary):hover,
 .card form button[type="submit"]:hover,
 .card form input[type="submit"]:hover{
   transform: translateY(-1px);
