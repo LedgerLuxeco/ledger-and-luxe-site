@@ -165,7 +165,6 @@ a { color: inherit; text-decoration: none; }
   box-shadow:0 18px 50px rgba(0,0,0,.10);
 }
 
-
 h2 { margin: 0 0 10px; font-size: 26px; }
 h3 { margin: 0 0 8px; font-size: 18px; }
 .muted { color: var(--muted); }
@@ -186,64 +185,7 @@ h3 { margin: 0 0 8px; font-size: 18px; }
 }
 
 .accent-sage{ color: var(--sage); }
-/* FORCE LIGHT HEADER (override everything) */
-.site-header{
-  background:#FFFFFF !important;
-  border-bottom:1px solid rgba(17,17,17,.08) !important;
-}
 
-.nav{
-  background:transparent !important;
-}
-html, body{
-  background: var(--bg) !important;
-}
-.nav-links{
-  display:flex;
-  align-items:center;
-  gap:28px;              /* controls spacing between links */
-}
-
-.nav-links a{
-  padding:10px 6px;      /* adds breathing room */
-}
-.nav{
-  padding:18px 0 !important;
-}
-/* === LIGHT AIRY HEADER OVERRIDES === */
-.site-header,
-.site-header *{
-  background: transparent !important;
-}
-
-.site-header{
-  background: #FFFFFF !important;
-  border-bottom: 1px solid rgba(17,17,17,.08) !important;
-  box-shadow: none !important;
-}
-.nav{
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-  padding:18px 0 !important;
-}
-
-.nav-links{
-  display:flex;
-  align-items:center;
-  gap:34px;              /* adjust: 28–44 */
-}
-
-.nav-links a{
-  padding:10px 4px;
-  font-size:13px;
-  letter-spacing:.45px;
-  text-transform:uppercase;
-}
-
-.nav{
-  background: transparent !important;
-}
 /* ================================
    LUXURY AIRY + REFLECTIVE GOLD
    Paste at END of styles.css
@@ -483,14 +425,7 @@ label{
   display:block;
   color:#111111;
 }
-:root {
-  --ivory: #FAF9F6;
-  --ink: #111111;
-  --soft-gray: #6F7573;
-  --sage: #9CAF9A;
-  --gold: #D4AF37; /* reflective, not yellow */
-  --gold-soft: rgba(212, 175, 55, 0.35);
-}
+
 /* NAV — airy + spaced */
 .site-header, header{
   background: rgba(255,255,255,.86) !important;
