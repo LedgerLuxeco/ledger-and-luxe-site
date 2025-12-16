@@ -189,3 +189,18 @@ html, body{
 .nav{
   padding:18px 0 !important;
 }
+/* === LIGHT AIRY HEADER OVERRIDES === */
+.site-header,
+.site-header *{
+  background: transparent !important;
+}
+
+.site-header{
+  background: #FFFFFF !important;
+  border-bottom: 1px solid rgba(17,17,17,.08) !important;
+  box-shadow: none !important;
+}
+
+.nav{
+  background: transparent !important;
+}
