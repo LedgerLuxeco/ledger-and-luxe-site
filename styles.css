@@ -1,7 +1,7 @@
 :root {
-  --bg:#0F1218;          /* deeper charcoal */
-  --panel: #121722;       /* rich navy-charcoal */
-  --text: #f5f7fa;        /* soft white */
+ --bg:#F7F5F2;
+--panel:#FFFFFF;
+--text:#1A1A1A;
   --muted: #a7b0c0;       /* refined gray-blue */
   --line: rgba(255,255,255,.08);
   --accent: #c7b98b;      /* soft gold */
