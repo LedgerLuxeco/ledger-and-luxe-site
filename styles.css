@@ -177,3 +177,12 @@ h3 { margin: 0 0 8px; font-size: 18px; }
 html, body{
   background: var(--bg) !important;
 }
+.nav-links{
+  display:flex;
+  align-items:center;
+  gap:28px;              /* controls spacing between links */
+}
+
+.nav-links a{
+  padding:10px 6px;      /* adds breathing room */
+}
