@@ -58,21 +58,6 @@ a { color: inherit; text-decoration: none; }
   border-bottom:1px solid rgba(17,17,17,.08);
 }
 
-.site-header::after{
-  content:"";
-  display:block;
-  height:2px;
-  width:100%;
-  background: linear-gradient(
-    90deg,
-    transparent 0%,
-    rgba(230,210,138,.35) 20%,
-    rgba(255,246,204,.95) 45%,
-    rgba(230,210,138,.55) 65%,
-    transparent 100%
-  );
-}
-
 .nav { display: flex; justify-content: space-between; align-items: center; padding: 14px 0; }
 .brand{
   font-family:'Playfair Display',serif;
@@ -105,9 +90,9 @@ a { color: inherit; text-decoration: none; }
   transition:transform .25s ease, box-shadow .25s ease, opacity .25s ease;
 }
 
-.btn:not(.secondary):hover,
-  transform:translateY(-1px);
-  box-shadow:0 14px 40px rgba(0,0,0,.18);
+.btn:not(.secondary):hover{
+  transform: translateY(-1px);
+  box-shadow: 0 14px 40px rgba(0,0,0,.18);
 }
 
 .hero {
