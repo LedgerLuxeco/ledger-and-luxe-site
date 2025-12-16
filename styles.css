@@ -439,18 +439,20 @@ h1{
 ================================ */
 
 input,
-textarea{
-  width:100%;
-  background:#ffffff;
-  border:1px solid rgba(17,17,17,.18);
-  border-radius:16px;
-  padding:16px 18px;
-  font-size:15px;
-  color:#111111;
-  box-shadow:
-    0 10px 30px rgba(0,0,0,.06),
-    inset 0 1px 0 rgba(255,255,255,.9);
+textarea {
+  width: 100%;
+  padding: 14px 18px;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: 1.5;
+  border-radius: 14px;
+  box-sizing: border-box;
 }
+textarea {
+  min-height: 160px;
+  resize: vertical;
+}
+
 textarea {
   font-family: inherit;
   font-size: inherit;
