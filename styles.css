@@ -353,6 +353,13 @@ h1{
   font-size: 18px;
   letter-spacing: .2px;
 }
+.price-range span{
+  color: var(--muted);
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: .1px;
+  margin-left: 6px;
+}
 
 section {
   padding: 96px 0;
