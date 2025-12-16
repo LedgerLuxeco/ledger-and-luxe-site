@@ -632,3 +632,26 @@ form .field{
   display:block;
   margin-bottom: 18px;
 }
+/* Contact form spacing + consistency */
+form label{
+  display:block;
+  margin: 0 0 18px;
+  font-size:13px;
+  letter-spacing:.5px;
+  text-transform:uppercase;
+}
+
+form label input,
+form label textarea{
+  margin-top: 8px;
+}
+
+/* Ensure inputs aren't black + match site font */
+form input,
+form textarea{
+  background:#fff !important;
+  color: var(--text) !important;
+  border: 1px solid rgba(17,17,17,.14) !important;
+  border-radius: 16px;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif !important;
+}
