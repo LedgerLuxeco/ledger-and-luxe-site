@@ -281,4 +281,114 @@ header, .site-header{
 }
 
 .nav-links{
-  display:flex !importan
+  display:flex !important;
+  align-items:center !important;
+  gap:34px !important;
+}
+
+.nav-links a{
+  font-size: 12.5px !important;
+  letter-spacing: .55px !important;
+  text-transform: uppercase !important;
+  opacity:.78 !important;
+}
+
+.nav-links a:hover{
+  opacity:1 !important;
+  color: var(--sage) !important;
+}
+
+/* Hero: airy, not blank */
+.hero{
+  padding: 92px 0 60px !important;
+}
+
+/* Reflective gold eyebrow text */
+.eyebrow{
+  color: transparent !important;
+  background: linear-gradient(
+    90deg,
+    rgba(199,185,139,.65),
+    rgba(255,233,170,.95),
+    rgba(199,185,139,.65)
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  letter-spacing: 2.4px !important;
+}
+
+/* Headline: elegant + slightly tighter */
+h1{
+  line-height: 1.02 !important;
+  letter-spacing: .1px !important;
+}
+
+/* Cards: bright, premium edge + soft shadow */
+.card{
+  background: rgba(255,255,255,.86) !important;
+  border: 1px solid rgba(17,17,17,.10) !important;
+  border-radius: 24px !important;
+  box-shadow:
+    0 18px 55px rgba(0,0,0,.08),
+    0 1px 0 rgba(255,255,255,.8) inset !important;
+}
+
+.card:hover{
+  transform: translateY(-3px) !important;
+  box-shadow:
+    0 26px 70px rgba(0,0,0,.10),
+    0 1px 0 rgba(255,255,255,.9) inset !important;
+}
+
+/* Buttons: luxe black primary + reflective gold hover */
+.btn{
+  border-radius: 999px !important;
+  transition: transform .25s ease, box-shadow .25s ease, filter .25s ease !important;
+}
+
+.btn:hover{
+  transform: translateY(-1px) !important;
+  box-shadow: 0 16px 45px rgba(0,0,0,.16) !important;
+}
+
+/* Optional: make the top CTA ("Book a Call") feel more luxe */
+.btn.primary, .btn.cta{
+  background: #111111 !important;
+  color: #ffffff !important;
+}
+
+/* Secondary button gets a gold ring */
+.btn.secondary{
+  border: 1px solid rgba(199,185,139,.55) !important;
+}
+
+.btn.secondary:hover{
+  border-color: rgba(255,233,170,.95) !important;
+}
+
+/* Subtle gold shimmer (only when you add class "gold-shimmer" in HTML) */
+.gold-shimmer{
+  position: relative;
+  overflow: hidden;
+}
+
+.gold-shimmer::after{
+  content:"";
+  position:absolute;
+  inset:-60% -40%;
+  background: linear-gradient(120deg,
+    transparent 0%,
+    rgba(255,233,170,.25) 35%,
+    rgba(199,185,139,.22) 50%,
+    transparent 70%
+  );
+  transform: translateX(-60%);
+  animation: shimmer 4.5s ease-in-out infinite;
+  pointer-events:none;
+}
+
+@keyframes shimmer{
+  0%{ transform: translateX(-60%); }
+  55%{ transform: translateX(60%); }
+  100%{ transform: translateX(60%); }
+}
