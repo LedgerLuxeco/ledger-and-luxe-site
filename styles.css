@@ -476,3 +476,60 @@ label{
   display:block;
   color:#111111;
 }
+:root {
+  --ivory: #FAF9F6;
+  --ink: #111111;
+  --soft-gray: #6F7573;
+  --sage: #9CAF9A;
+  --gold: #D4AF37; /* reflective, not yellow */
+  --gold-soft: rgba(212, 175, 55, 0.35);
+}
+/* NAV — airy + spaced */
+.site-header, header{
+  background: rgba(255,255,255,.86) !important;
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(17,17,17,.08) !important;
+  box-shadow: 0 18px 45px rgba(0,0,0,.06) !important;
+}
+
+.nav{
+  display:flex !important;
+  align-items:center !important;
+  justify-content:space-between !important;
+  padding: 16px 0 !important;
+}
+
+.nav-links{
+  display:flex !important;
+  align-items:center !important;
+  gap: 36px !important; /* increase/decrease as desired */
+}
+
+.nav-links a{
+  font-size: 12.5px !important;
+  letter-spacing: .55px !important;
+  text-transform: uppercase !important;
+  opacity: .78 !important;
+}
+
+.nav-links a:hover{
+  opacity: 1 !important;
+  color: var(--sage) !important;
+}
+
+/* CTA button (Book a Call) */
+.btn{
+  border-radius: 999px !important;
+  padding: 12px 18px !important;
+  transition: transform .25s ease, box-shadow .25s ease !important;
+}
+
+.btn:hover{
+  transform: translateY(-1px) !important;
+  box-shadow: 0 16px 45px rgba(0,0,0,.14) !important;
+}
+
+/* Optional: a gold ring on secondary buttons */
+.btn.secondary{
+  border: 1px solid rgba(230,212,138,.55) !important;
+}
