@@ -8,6 +8,13 @@
   --btn: #f5f7fa;
   --btnText: #0a0d12;
 }
+.eyebrow{
+  color:var(--accent);
+  text-transform:uppercase;
+  letter-spacing:2px;
+  font-size:12px;
+  margin-bottom:14px;
+}
 
 * { box-sizing: border-box; }
 html, body { margin: 0; padding: 0; }
