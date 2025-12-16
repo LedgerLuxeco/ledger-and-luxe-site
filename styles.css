@@ -533,3 +533,14 @@ label{
 .btn.secondary{
   border: 1px solid rgba(230,212,138,.55) !important;
 }
+.price-range{
+  margin: 10px 0 12px;
+  font-weight: 650;
+  font-size: 18px;
+  letter-spacing: .2px;
+}
+
+.price-range span{
+  color: var(--muted);
+  font-weight: 500;
+}
