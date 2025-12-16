@@ -392,3 +392,23 @@ h1{
   55%{ transform: translateX(60%); }
   100%{ transform: translateX(60%); }
 }
+.price-range{
+  margin: 10px 0 14px;
+  font-weight: 600;
+  letter-spacing: .2px;
+  font-size: 18px;
+  color: transparent;
+  background: linear-gradient(
+    90deg,
+    rgba(199,185,139,.70),
+    rgba(255,233,170,.98),
+    rgba(199,185,139,.70)
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.price-range span{
+  color: var(--muted);
+  font-weight: 500;
+}
