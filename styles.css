@@ -294,21 +294,16 @@ h1{
 }
 
 .card:hover{
-  transform: translateY(-3px) !important;
+  transform: none !important;
   box-shadow:
-    0 26px 70px rgba(0,0,0,.10),
+    0 18px 55px rgba(0,0,0,.08),
     0 1px 0 rgba(255,255,255,.9) inset !important;
 }
 
-/* Buttons: luxe black primary + reflective gold hover */
+/* Buttons: base (hover/focus handled by GOLD DISCIPLINE block) */
 .btn{
   border-radius: 999px !important;
   transition: transform .25s ease, box-shadow .25s ease, filter .25s ease !important;
-}
-
-.btn:hover{
-  transform: translateY(-1px) !important;
-  box-shadow: 0 16px 45px rgba(0,0,0,.16) !important;
 }
 
 /* Optional: make the top CTA ("Book a Call") feel more luxe */
@@ -317,65 +312,37 @@ h1{
   color: #ffffff !important;
 }
 
-/* Secondary button gets a gold ring */
+/* Secondary buttons stay neutral */
 .btn.secondary{
   border: 1px solid rgba(17,17,17,.16);
 }
 
-.btn.secondary:hover{
-}
-
-/* Subtle gold shimmer (only when you add class "gold-shimmer" in HTML) */
-.gold-shimmer{
-  position: relative;
-  overflow: hidden;
-}
-
-.gold-shimmer::after{
-  content:"";
-  position:absolute;
-  inset:-60% -40%;
-  background: linear-gradient(120deg,
-    transparent 0%,
-    rgba(255,233,170,.25) 35%,
-    rgba(199,185,139,.22) 50%,
-    transparent 70%
-  );
-  transform: translateX(-60%);
-  animation: shimmer 4.5s ease-in-out infinite;
-  pointer-events:none;
-}
-
-@keyframes shimmer{
-  0%{ transform: translateX(-60%); }
-  55%{ transform: translateX(60%); }
-  100%{ transform: translateX(60%); }
-}
-
-.price-range {
+.price-range{
   font-size: 20px;
   font-weight: 700;
   letter-spacing: .1px;
 }
-.price-range span {
+.price-range span{
   font-size: 14px;
   opacity: .7;
 }
-.pricing-note {
+
+.pricing-note{
   margin-top: 24px;
   text-align: center;
   font-size: 14px;
   letter-spacing: .2px;
 }
 
-section {
+section{
   padding: 96px 0;
 }
+
 /* ==========================================
    LEDGER & LUXE — CONTACT FORM (CLEAN)
 ========================================== */
-
 .card form{ margin-top: 14px; }
+
 
 .card form label{
   display:block;
