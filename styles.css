@@ -582,3 +582,12 @@ form textarea{
   border-radius: 16px;
   font-family: 'Inter', system-ui, -apple-system, sans-serif !important;
 }
+form label{
+  margin-bottom: 18px;
+}
+
+form label input,
+form label textarea{
+  display:block;
+  margin-top: 8px;
+}
