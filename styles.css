@@ -5,9 +5,6 @@
   --sage: #9CAF9A;
   --gold: #D4AF37; /* reflective, not yellow */
   --gold-soft: rgba(212, 175, 55, 0.35);
-}
-
-:root{
   --bg:#F7F6F2;          /* airy ivory */
   --panel:#FFFFFF;       /* clean white cards */
   --text:#111111;        /* true black text */
@@ -360,11 +357,6 @@ h1{
   font-weight: 650;
   font-size: 18px;
   letter-spacing: .2px;
-}
-
-.price-range span{
-  color: var(--muted);
-  font-weight: 500;
 }
 
 section {
