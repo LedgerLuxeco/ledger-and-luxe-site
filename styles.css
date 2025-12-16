@@ -427,6 +427,10 @@ section {
   border-color: rgba(17,17,17,.18);
   box-shadow: 0 16px 40px rgba(0,0,0,.10);
 }
+.card form input:hover,
+.card form textarea:hover{
+  border-color: rgba(17,17,17,.16);
+}
 
 .card form button[type="submit"]{
   display:inline-flex;
@@ -447,6 +451,9 @@ section {
   text-transform: uppercase;
 
   cursor:pointer;
+  appearance: none;
+transition: transform .25s ease, box-shadow .25s ease, filter .25s ease;
+
 }
 
 @media (max-width: 640px){
