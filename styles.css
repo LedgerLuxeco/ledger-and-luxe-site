@@ -407,14 +407,15 @@ h1{
 .price-range{
   margin: 10px 0 14px;
   font-weight: 600;
-  letter-spacing: .2px;
   font-size: 18px;
   color: transparent;
   background: linear-gradient(
     90deg,
-    rgba(199,185,139,.70),
-    rgba(255,233,170,.98),
-    rgba(199,185,139,.70)
+    #C9AE5D,
+    #FFF1B8,
+    #E6D28A,
+    #FFF6CC,
+    #C9AE5D
   );
   -webkit-background-clip: text;
   background-clip: text;
