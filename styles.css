@@ -372,15 +372,11 @@ section {
   padding: 96px 0;
 }
 /* ==========================================
-   LEDGER & LUXE — CONTACT FORM (PRISTINE)
-   Paste at the VERY END of styles.css
+   LEDGER & LUXE — CONTACT FORM (CLEAN)
 ========================================== */
 
-.card form{
-  margin-top: 14px;
-}
+.card form{ margin-top: 14px; }
 
-/* Field rhythm */
 .card form label{
   display:block;
   margin: 0 0 18px;
@@ -390,30 +386,28 @@ section {
   color: var(--text);
 }
 
-/* Inputs + textarea share the same “luxury” baseline */
 .card form input,
 .card form textarea{
   display:block;
   width:100%;
   margin-top: 8px;
-
   padding: 14px 16px;
   border-radius: 16px;
   box-sizing: border-box;
 
-  background: rgba(255,255,255,.92) !important;
-  color: var(--text) !important;
+  background: rgba(255,255,255,.92);
+  color: var(--text);
 
-  border: 1px solid rgba(17,17,17,.14) !important;
+  border: 1px solid var(--lineStrong);
   box-shadow:
     0 12px 32px rgba(0,0,0,.06),
     inset 0 1px 0 rgba(255,255,255,.9);
 
-  font-family: 'Inter', system-ui, -apple-system, sans-serif !important;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
   font-size: 16px;
   line-height: 1.6;
 
-  transition: border-color .25s ease, box-shadow .25s ease, transform .25s ease;
+  transition: border-color .25s ease, box-shadow .25s ease;
 }
 
 .card form textarea{
@@ -421,29 +415,20 @@ section {
   resize: vertical;
 }
 
-/* Placeholders */
 .card form input::placeholder,
 .card form textarea::placeholder{
   color: rgba(75,85,99,.65);
 }
 
-/* Focus (soft reflective gold) */
+/* Keep inputs neutral; gold is for BUTTONS only */
 .card form input:focus,
 .card form textarea:focus{
-  border-color: rgba(17,17,17,.28) !important;
-  box-shadow:
-    0 12px 32px rgba(0,0,0,.08);
+  outline: none;
+  border-color: rgba(17,17,17,.18);
+  box-shadow: 0 16px 40px rgba(0,0,0,.10);
 }
 
-/* Subtle hover (whisper, not loud) */
-.card form input:hover,
-.card form textarea:hover{
-  border-color: rgba(17,17,17,.22) !important;
-}
-
-/* Button: quiet luxury */
-.card form button[type="submit"],
-.card form input[type="submit"]{
+.card form button[type="submit"]{
   display:inline-flex;
   align-items:center;
   justify-content:center;
@@ -452,56 +437,22 @@ section {
   padding: 14px 32px;
   border-radius: 999px;
 
-  .form-note {
-  margin: 10px 0 6px;
-  font-size: 13px;
-  opacity: .75;
-}
   background: linear-gradient(135deg, #0f0f0f, #1a1a1a);
   color: #f8f8f8;
 
-  border: 1px solid rgba(230,210,138,.35);
+  border: 1px solid rgba(17,17,17,.10);
   font-family: 'Inter', system-ui, -apple-system, sans-serif;
   font-size: 0.95rem;
   letter-spacing: .06em;
   text-transform: uppercase;
 
   cursor:pointer;
-  transition: transform .30s ease, box-shadow .30s ease, border-color .30s ease, filter .30s ease;
 }
 
-/* Elegant hover */
-.card form button:hover,
-.btn:hover{
-  box-shadow:
-    0 18px 55px rgba(0,0,0,.16),
-    0 0 0 1px rgba(230,210,138,.22);
-}
-  filter: brightness(1.03);
-}
-
-/* Keyboard focus */
-.card form button[type="submit"]:focus,
-.card form input[type="submit"]:focus{
-  outline:none;
-  box-shadow:
-    0 0 0 3px rgba(230,210,138,.25),
-    0 18px 55px rgba(0,0,0,.16);
-}
-
-/* Small screens: slightly tighter padding */
 @media (max-width: 640px){
-  .card form input,
-  .card form textarea{
-    padding: 13px 14px;
-    border-radius: 14px;
-  }
-
-  .card form button[type="submit"],
-  .card form input[type="submit"]{
-    width: 100%;
-  }
+  .card form button[type="submit"]{ width: 100%; }
 }
+
 /* ==========================================
    L&L — GOLD DISCIPLINE (2 gold moments only)
    1) Eyebrow gradient
