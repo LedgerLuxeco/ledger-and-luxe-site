@@ -48,12 +48,27 @@
 
         <div class="card">
           <h3>Quick message</h3>
-          <form action="mailto:hello@ledgerluxeco.com" method="post" enctype="text/plain">
-            <label>Name<br /><input name="name" style="width:100%;padding:10px;border-radius:10px;border:1px solid rgba(255,255,255,.15);background:#0b0f14;color:#e8eef6;"></label><br /><br />
-            <label>Business Name<br /><input name="business" style="width:100%;padding:10px;border-radius:10px;border:1px solid rgba(255,255,255,.15);background:#0b0f14;color:#e8eef6;"></label><br /><br />
-            <label>Message<br /><textarea name="message" rows="5" style="width:100%;padding:10px;border-radius:10px;border:1px solid rgba(255,255,255,.15);background:#0b0f14;color:#e8eef6;"></textarea></label><br /><br />
-            <button class="btn" type="submit">Send</button>
-          </form
+          <form name="contact" method="POST" data-netlify="true">
+  <input type="hidden" name="form-name" value="contact">
+
+  <label>
+    Name
+    <input type="text" name="name" required>
+  </label>
+
+  <label>
+    Business Name
+    <input type="text" name="business" required>
+  </label>
+
+  <label>
+    Message
+    <textarea name="message" rows="5" required></textarea>
+  </label>
+
+  <button type="submit">Send</button>
+</form>
+
         </div>
       </div>
     </section>
