@@ -208,22 +208,6 @@ header, .site-header{
 }
 
 /* Reflective gold hairline under header */
-.site-header::after{
-  content:"";
-  display:block;
-  height:2px;
-  width:100%;
-  background: linear-gradient(
-    90deg,
-    transparent 0%,
-    rgba(199,185,139,.20) 15%,
-    rgba(255,233,170,.85) 35%,
-    rgba(199,185,139,.55) 50%,
-    rgba(255,233,170,.85) 65%,
-    rgba(199,185,139,.20) 85%,
-    transparent 100%
-  );
-}
 
 /* Brand: luxe signature feel */
 .brand{
