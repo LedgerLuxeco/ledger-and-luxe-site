@@ -353,18 +353,14 @@ h1{
   100%{ transform: translateX(60%); }
 }
 
-.price-range{
-  margin: 10px 0 12px;
-  font-weight: 650;
-  font-size: 18px;
-  letter-spacing: .2px;
-}
-.price-range span{
-  color: var(--muted);
-  font-weight: 500;
-  font-size: 14px;
+.price-range {
+  font-size: 20px;
+  font-weight: 700;
   letter-spacing: .1px;
-  margin-left: 6px;
+}
+.price-range span {
+  font-size: 14px;
+  opacity: .7;
 }
 
 section {
