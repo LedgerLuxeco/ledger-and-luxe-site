@@ -362,6 +362,12 @@ h1{
   font-size: 14px;
   opacity: .7;
 }
+.pricing-note {
+  margin-top: 24px;
+  text-align: center;
+  font-size: 14px;
+  letter-spacing: .2px;
+}
 
 section {
   padding: 96px 0;
