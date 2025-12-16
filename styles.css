@@ -502,3 +502,95 @@ section {
     width: 100%;
   }
 }
+/* ==========================================
+   L&L — GOLD DISCIPLINE (2 gold moments only)
+   1) Eyebrow gradient
+   2) Button hover/focus glow
+   Paste at VERY END of styles.css
+========================================== */
+
+/* 0) Neutralize global “gold-ish” borders and lines */
+:root{
+  --line: rgba(17,17,17,.08);                 /* softer, quieter */
+  --lineStrong: rgba(17,17,17,.12);
+  --goldGlow: rgba(230,210,138,.22);          /* used ONLY for button glow */
+  --goldGlowStrong: rgba(230,210,138,.32);
+}
+
+/* 1) Keep eyebrow as a primary gold moment (already good, just unify) */
+.eyebrow{
+  color: transparent !important;
+  background: linear-gradient(
+    90deg,
+    rgba(199,185,139,.65),
+    rgba(255,233,170,.95),
+    rgba(199,185,139,.65)
+  ) !important;
+  -webkit-background-clip: text !important;
+  background-clip: text !important;
+}
+
+/* 2) Remove gold from “everywhere else” (borders, rings, hairlines) */
+.site-header::after{
+  /* make the header hairline subtle/neutral instead of gold */
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(17,17,17,.10) 25%,
+    rgba(17,17,17,.18) 50%,
+    rgba(17,17,17,.10) 75%,
+    transparent 100%
+  ) !important;
+  height: 1px !important;
+}
+
+.card{
+  border: 1px solid var(--line) !important;
+}
+
+/* Secondary buttons should be neutral (no gold ring) */
+.btn.secondary{
+  border: 1px solid var(--line) !important;
+}
+
+/* Form fields: neutral borders (no gold until focus) */
+.card form input,
+.card form textarea{
+  border: 1px solid var(--lineStrong) !important;
+}
+
+/* 3) Button hover/focus = second gold moment (soft reflective glow) */
+.btn,
+.card form button[type="submit"],
+.card form input[type="submit"]{
+  transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease, filter .25s ease;
+}
+
+/* Hover: subtle lift + gold glow */
+.btn:hover,
+.card form button[type="submit"]:hover,
+.card form input[type="submit"]:hover{
+  transform: translateY(-1px);
+  box-shadow:
+    0 18px 55px rgba(0,0,0,.16),
+    0 0 0 3px var(--goldGlow);
+}
+
+/* Keyboard focus: stronger but still classy */
+.btn:focus-visible,
+.card form button[type="submit"]:focus-visible,
+.card form input[type="submit"]:focus-visible{
+  outline: none;
+  box-shadow:
+    0 0 0 4px var(--goldGlowStrong),
+    0 18px 55px rgba(0,0,0,.16);
+}
+
+/* Optional: keep input focus calm + not “gold everywhere” */
+.card form input:focus,
+.card form textarea:focus{
+  outline: none;
+  border-color: rgba(17,17,17,.18) !important;   /* stays neutral */
+  box-shadow:
+    0 16px 40px rgba(0,0,0,.10);                 /* luxe depth, no gold ring */
+}
