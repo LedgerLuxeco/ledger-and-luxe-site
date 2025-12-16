@@ -223,3 +223,62 @@ html, body{
 .nav{
   background: transparent !important;
 }
+/* ================================
+   LUXURY AIRY + REFLECTIVE GOLD
+   Paste at END of styles.css
+================================ */
+
+/* Background: airy ivory with subtle dimension */
+html, body{
+  background:
+    radial-gradient(900px 600px at 12% 8%, rgba(199,185,139,.18), transparent 55%),
+    radial-gradient(900px 700px at 85% 12%, rgba(155,174,155,.14), transparent 60%),
+    linear-gradient(180deg, #FFFFFF 0%, #F7F6F2 45%, #FFFFFF 100%) !important;
+}
+
+/* Keep text crisp */
+body{ color: var(--text) !important; }
+
+/* Header: glassy white (airy) */
+header, .site-header{
+  background: rgba(255,255,255,.82) !important;
+  backdrop-filter: blur(10px) saturate(1.05);
+  border-bottom: 1px solid rgba(17,17,17,.08) !important;
+  box-shadow: 0 18px 45px rgba(0,0,0,.06) !important;
+}
+
+/* Reflective gold hairline under header */
+.site-header::after{
+  content:"";
+  display:block;
+  height:2px;
+  width:100%;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(199,185,139,.20) 15%,
+    rgba(255,233,170,.85) 35%,
+    rgba(199,185,139,.55) 50%,
+    rgba(255,233,170,.85) 65%,
+    rgba(199,185,139,.20) 85%,
+    transparent 100%
+  );
+}
+
+/* Brand: luxe signature feel */
+.brand{
+  font-family: 'Playfair Display', serif !important;
+  letter-spacing: .6px !important;
+  font-size: 18px !important;
+}
+
+/* Nav spacing + refinement */
+.nav{
+  display:flex !important;
+  align-items:center !important;
+  justify-content:space-between !important;
+  padding:16px 0 !important;
+}
+
+.nav-links{
+  display:flex !importan
