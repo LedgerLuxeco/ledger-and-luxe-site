@@ -456,6 +456,13 @@ section {
   padding: 14px 32px;
   border-radius: 999px;
 
+  .form-note {
+  margin: 10px 0 6px;
+  font-size: 13px;
+  opacity: .75;
+}
+
+
   background: linear-gradient(135deg, #0f0f0f, #1a1a1a);
   color: #f8f8f8;
 
