@@ -1,3 +1,12 @@
+:root {
+  --ivory: #FAF9F6;
+  --ink: #111111;
+  --soft-gray: #6F7573;
+  --sage: #9CAF9A;
+  --gold: #D4AF37; /* reflective, not yellow */
+  --gold-soft: rgba(212, 175, 55, 0.35);
+}
+
 :root{
   --bg:#F7F6F2;          /* airy ivory */
   --panel:#FFFFFF;       /* clean white cards */
