@@ -1,11 +1,12 @@
 :root {
-  --bg: #0b0f14;
-  --panel: #111824;
-  --text: #e8eef6;
-  --muted: #a9b4c3;
-  --line: rgba(255,255,255,.10);
-  --btn: #ffffff;
-  --btnText: #0b0f14;
+  --bg: #0a0d12;          /* deeper charcoal */
+  --panel: #121722;       /* rich navy-charcoal */
+  --text: #f5f7fa;        /* soft white */
+  --muted: #a7b0c0;       /* refined gray-blue */
+  --line: rgba(255,255,255,.08);
+  --accent: #c7b98b;      /* soft gold */
+  --btn: #f5f7fa;
+  --btnText: #0a0d12;
 }
 
 * { box-sizing: border-box; }
