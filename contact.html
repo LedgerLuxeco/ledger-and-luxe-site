@@ -48,11 +48,7 @@
 
         <div class="card">
           <h3>Quick message</h3>
-<form
-  name="contact"
-  method="POST"
-  data-netlify="true"
->
+<form name="contact" method="POST" data-netlify="true">
   <input type="hidden" name="form-name" value="contact" />
 
   <label>
@@ -64,31 +60,34 @@
     Business Name
     <input type="text" name="business" />
   </label>
-  
-<label for="email">Email</label>
-<input
-  type="email"
-  name="email"
-  id="email"
-  placeholder="you@company.com"
-  required
-/>
 
-<label for="phone">Phone (optional)</label>
-<input
-  type="tel"
-  name="phone"
-  id="phone"
-  placeholder="(555) 123-4567"
-/>
+  <label>
+    Email
+    <input
+      type="email"
+      name="email"
+      placeholder="you@company.com"
+      required
+    />
+  </label>
+
+  <label>
+    Phone (optional)
+    <input
+      type="tel"
+      name="phone"
+      placeholder="(555) 123-4567"
+    />
+  </label>
 
   <label>
     Message
     <textarea name="message" required></textarea>
   </label>
 
-  <button type="submit">Send</button>
+  <button type="submit" class="btn">Send</button>
 </form>
+
 
         </div>
       </div>
