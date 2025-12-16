@@ -573,3 +573,5 @@ form label textarea{
     width: 100%;
   }
 }
+<input type="email" name="email" autocomplete="email" ... />
+<input type="tel" name="phone" autocomplete="tel" ... />
