@@ -186,3 +186,6 @@ html, body{
 .nav-links a{
   padding:10px 6px;      /* adds breathing room */
 }
+.nav{
+  padding:18px 0 !important;
+}
