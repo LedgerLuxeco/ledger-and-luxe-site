@@ -165,4 +165,13 @@ h3 { margin: 0 0 8px; font-size: 18px; }
 }
 
 .accent-sage{ color: var(--sage); }
+/* FORCE LIGHT HEADER (override everything) */
+.site-header{
+  background:#FFFFFF !important;
+  border-bottom:1px solid rgba(17,17,17,.08) !important;
+}
+
+.nav{
+  background:transparent !important;
+}
 
