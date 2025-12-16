@@ -111,12 +111,6 @@ a { color: inherit; text-decoration: none; }
   box-shadow:0 14px 40px rgba(0,0,0,.18);
 }
 
-.btn.secondary{
-  background:transparent;
-  color:var(--text);
-  border:1px solid var(--line);
-}
-
 .hero{
   padding:140px 0 90px;
 }
@@ -355,22 +349,6 @@ h1{
   55%{ transform: translateX(60%); }
   100%{ transform: translateX(60%); }
 }
-.price-range{
-  margin: 10px 0 14px;
-  font-weight: 600;
-  font-size: 18px;
-  color: transparent;
-  background: linear-gradient(
-    90deg,
-    #C9AE5D,
-    #FFF1B8,
-    #E6D28A,
-    #FFF6CC,
-    #C9AE5D
-  );
-  -webkit-background-clip: text;
-  background-clip: text;
-}
 
 .price-range span{
   color: var(--muted);
@@ -392,28 +370,7 @@ h1{
   color: var(--muted);
   font-weight: 500;
 }
-button,
-input[type="submit"] {
-  background: linear-gradient(135deg, #0f0f0f, #1a1a1a);
-  color: #f8f8f8;
-  border: 1px solid rgba(212, 175, 55, 0.35); /* soft gold */
-  border-radius: 999px;
-  padding: 14px 32px;
-  font-family: inherit;
-  font-size: 0.95rem;
-  letter-spacing: 0.04em;
-  cursor: pointer;
-  transition: all 0.35s ease;
-}
-button:hover,
-input[type="submit"]:hover {
-  background: linear-gradient(135deg, #161616, #222);
-  border-color: rgba(212, 175, 55, 0.75);
-  box-shadow:
-    0 8px 24px rgba(0, 0, 0, 0.25),
-    0 0 0 1px rgba(212, 175, 55, 0.25);
-  transform: translateY(-1px);
-}
+
 button:focus,
 input[type="submit"]:focus {
   outline: none;
