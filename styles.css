@@ -312,3 +312,6 @@ img {
     padding: 24px;
   }
 }
+.price-range span {
+  white-space: nowrap;
+}
