@@ -271,3 +271,50 @@ nav a {
     grid-template-columns: 1fr;
   }
 }
+/* FINAL LEDGER & LUXE POLISH */
+
+.luxury-hero {
+  min-height: 76vh;
+  gap: 3rem;
+  padding: 5.5rem 8%;
+}
+
+.hero-copy {
+  max-width: 690px;
+}
+
+.hero-copy h1 {
+  font-size: clamp(2.5rem, 4.2vw, 4.4rem);
+  line-height: 1;
+  letter-spacing: 0.015em;
+}
+
+.hero-description {
+  max-width: 540px;
+  font-size: 0.98rem;
+}
+
+.brand-monogram {
+  font-size: clamp(3.4rem, 5.5vw, 4.7rem);
+}
+
+.hero-divider {
+  height: 145px;
+}
+
+.section {
+  padding: 4.5rem 8%;
+}
+
+.section h2 {
+  font-size: clamp(2rem, 3vw, 3rem);
+  line-height: 1.08;
+}
+
+.service-card {
+  padding: 1.5rem;
+}
+
+.service-card h3 {
+  font-size: 1.35rem;
+}
