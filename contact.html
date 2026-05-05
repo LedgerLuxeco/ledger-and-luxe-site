@@ -3,11 +3,12 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Contact | Ledger &amp; Luxe Collective</title>
-  <meta name="description" content="Ledger &amp; Luxe Collective is a boutique bookkeeping and advisory firm providing structured, profit-first financial support.">
+  <title>Contact | Ledger & Luxe Collective</title>
+  <meta name="description" content="Ledger & Luxe Collective is a boutique bookkeeping and advisory firm providing structured, profit-first financial support.">
   <link rel="stylesheet" href="styles.css" />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
+
 <body>
   <header class="site-header">
     <nav class="nav container">
@@ -25,16 +26,21 @@
     <section class="hero">
       <p class="eyebrow">Contact</p>
       <h1>Let’s get your books handled.</h1>
-      <p class="lead">Book a consult, or email us. We’ll confirm fit, scope, and your best tier.</p>
+      <p class="lead">Book a consult, or send a quick note. We’ll confirm fit, scope, and your best tier.</p>
 
       <div class="cta-row">
-        <a class="btn" href="https://calendly.com/alnisaw-ledgerluxeco/30min" target="_blank" rel="noopener">Book via Calendly</a>
-        <a class="btn secondary" href="mailto:hello@ledgerluxeco.com">Email: hello@ledgerluxeco.com</a>
+        <a class="btn" href="https://calendly.com/alnisaw-ledgerluxeco/30min" target="_blank" rel="noopener">
+          Book via Calendly
+        </a>
+        <a class="btn secondary" href="mailto:hello@ledgerluxeco.com">
+          Email: hello@ledgerluxeco.com
+        </a>
       </div>
     </section>
 
     <section class="section">
       <div class="grid-2">
+        
         <div class="card">
           <h3>What to expect</h3>
           <ol class="steps">
@@ -48,51 +54,54 @@
 
         <div class="card">
           <h3>Quick message</h3>
-<form name="contact" method="POST" data-netlify="true">
-  <input type="hidden" name="form-name" value="contact" />
 
-  <label>
-    Name
-    <input type="text" name="name" required />
-  </label>
+          <form name="contact" method="POST" data-netlify="true">
+            <input type="hidden" name="form-name" value="contact" />
 
-  <label>
-    Business Name
-    <input type="text" name="business" />
-  </label>
+            <label>
+              Name
+              <input type="text" name="name" required />
+            </label>
 
-  <label>
-    Email
-    <input
-      type="email"
-      name="email"
-      placeholder="you@company.com"
-      required
-    />
-  </label>
+            <label>
+              Business Name
+              <input type="text" name="business" />
+            </label>
 
-  <label>
-    Phone (optional)
-    <input
-      type="tel"
-      name="phone"
-      placeholder="(555) 123-4567"
-    />
-  </label>
+            <label>
+              Email
+              <input
+                type="email"
+                name="email"
+                placeholder="you@company.com"
+                autocomplete="email"
+                required
+              />
+            </label>
 
-  <label>
-    Message
-    <textarea name="message" required></textarea>
-  </label>
-  
-<p class="form-note muted">
-  We respond within 1–2 business days.
-</p>
-  <button type="submit" class="btn">Send</button>
-</form>
+            <label>
+              Phone <span class="optional">(optional)</span>
+              <input
+                type="tel"
+                name="phone"
+                placeholder="(555) 123-4567"
+                autocomplete="tel"
+              />
+            </label>
 
+            <label>
+              Message
+              <textarea name="message" required></textarea>
+            </label>
 
+            <p class="form-note muted">
+              We respond within 1–2 business days.
+            </p>
+
+            <button type="submit" class="btn">Send</button>
+          </form>
         </div>
+
       </div>
     </section>
   </main>
@@ -101,14 +110,16 @@
     <div class="container footer-grid">
       <div>
         <div class="brand">Ledger &amp; Luxe Collective</div>
-        <p class="muted">Boutique Bookkeeping & Advisory</p>
+        <p class="muted">Boutique Bookkeeping &amp; Advisory</p>
       </div>
+
       <div class="footer-links">
         <a href="services.html">Services</a>
         <a href="pricing.html">Pricing</a>
         <a href="about.html">About</a>
         <a href="contact.html">Contact</a>
       </div>
+
       <div class="footer-links">
         <a href="privacy.html">Privacy</a>
         <a href="terms.html">Terms</a>
@@ -117,6 +128,3 @@
   </footer>
 </body>
 </html>
-
-<input type="email" name="email" autocomplete="email" ... />
-<input type="tel" name="phone" autocomplete="tel" ... />
