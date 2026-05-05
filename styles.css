@@ -1,320 +1,159 @@
+/* RESET */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* BRAND COLORS */
 :root {
-  --ivory: #f8f3eb;
-  --cream: #efe6d8;
-  --black: #111111;
-  --charcoal: #2a2926;
-  --gold: #a98245;
-  --muted: #756f66;
-  --white: #fffaf3;
+  --charcoal: #111111;
+  --gold: #C9A468;
+  --ivory: #F7F4EF;
+  --text-light: #6f6a64;
 }
 
-/* BASE */
-
+/* BODY */
 body {
-  background: var(--ivory);
+  font-family: 'Inter', sans-serif;
+  background-color: var(--ivory);
   color: var(--charcoal);
-  font-family: Arial, Helvetica, sans-serif;
   line-height: 1.6;
 }
 
-/* HEADER */
+/* TYPOGRAPHY */
+h1, h2, h3 {
+  font-family: 'Playfair Display', serif;
+  letter-spacing: -0.5px;
+}
 
+h1 {
+  font-size: 56px;
+  line-height: 1.1;
+}
+
+h2 {
+  font-size: 38px;
+}
+
+p {
+  color: var(--text-light);
+  font-size: 16px;
+}
+
+/* HEADER */
 .site-header {
-  padding: 22px 7%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 1px solid rgba(169,130,69,0.2);
+  padding: 30px 80px;
   background: var(--ivory);
 }
 
 .logo {
-  font-family: Georgia, serif;
-  text-transform: uppercase;
-  letter-spacing: 0.14em;
-  font-size: 1rem;
-  color: var(--black);
-}
-
-nav {
-  display: flex;
-  gap: 24px;
+  font-family: 'Playfair Display', serif;
+  font-size: 20px;
+  letter-spacing: 2px;
 }
 
 nav a {
+  margin-left: 30px;
   text-decoration: none;
-  text-transform: uppercase;
-  letter-spacing: 0.12em;
-  font-size: 0.72rem;
   color: var(--charcoal);
+  font-size: 14px;
+  letter-spacing: 1px;
 }
 
 /* HERO */
-
-.luxury-hero {
-  min-height: 78vh;
-  display: grid;
-  grid-template-columns: 0.55fr 1px 1.45fr;
+.hero {
+  display: flex;
   align-items: center;
-  gap: 3.5rem;
-  padding: 6rem 8%;
-  background:
-    linear-gradient(
-      90deg,
-      rgba(248,243,235,0.96),
-      rgba(248,243,235,0.9),
-      rgba(248,243,235,0.78)
-    ),
-    url("images/ledger-luxe-hero.png");
-  background-size: cover;
-  background-position: center right;
+  justify-content: space-between;
+  padding: 100px 80px;
+  gap: 60px;
 }
 
-/* LEFT BRAND */
-
-.hero-brand {
-  text-align: center;
-}
-
-.brand-monogram {
-  font-family: Georgia, serif;
-  font-size: clamp(3.5rem, 6vw, 5rem);
-  color: var(--gold);
-  margin-bottom: 1rem;
-}
-
-.brand-name {
-  font-family: Georgia, serif;
-  text-transform: uppercase;
-  letter-spacing: 0.25em;
-  font-size: 0.7rem;
-  color: var(--black);
-}
-
-/* DIVIDER */
-
-.hero-divider {
-  width: 1px;
-  height: 160px;
-  background: linear-gradient(to bottom, transparent, var(--gold), transparent);
-}
-
-/* RIGHT CONTENT */
-
-.hero-copy {
-  max-width: 720px;
+.hero-text {
+  max-width: 520px;
 }
 
 .eyebrow {
+  font-size: 12px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
   color: var(--gold);
-  text-transform: uppercase;
-  letter-spacing: 0.22em;
-  font-size: 0.7rem;
-  font-weight: 700;
-  margin-bottom: 1rem;
+  margin-bottom: 20px;
 }
 
-.hero-copy h1 {
-  font-family: Georgia, serif;
-  font-size: clamp(2.6rem, 4.5vw, 4.6rem);
-  line-height: 0.98;
-  text-transform: uppercase;
-  color: var(--black);
+.hero-text h1 {
+  margin-bottom: 20px;
 }
 
-.hero-description {
-  margin-top: 1.3rem;
-  font-size: 1rem;
-  color: var(--muted);
-  max-width: 560px;
+.hero-text p {
+  margin-bottom: 30px;
 }
 
 /* BUTTONS */
-
-.hero-actions {
-  display: flex;
-  gap: 1rem;
-  margin-top: 2rem;
-}
-
-.luxury-btn,
-.secondary-btn {
-  height: 52px;
-  padding: 0 1.6rem;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  text-transform: uppercase;
-  letter-spacing: 0.12em;
-  font-size: 0.7rem;
+.btn-primary {
+  background: var(--charcoal);
+  color: white;
+  padding: 14px 28px;
   text-decoration: none;
-  border: 1px solid var(--black);
+  font-size: 13px;
+  letter-spacing: 1px;
+  margin-right: 15px;
 }
 
-.luxury-btn {
-  background: var(--black);
-  color: var(--ivory);
+.btn-secondary {
+  border: 1px solid var(--gold);
+  color: var(--charcoal);
+  padding: 14px 28px;
+  text-decoration: none;
+  font-size: 13px;
+  letter-spacing: 1px;
 }
 
-.secondary-btn {
-  background: transparent;
-  border-color: var(--gold);
-  color: var(--black);
+/* HERO IMAGE */
+.hero img {
+  width: 520px;
+  border-radius: 4px;
 }
 
-.tagline {
-  margin-top: 1.6rem;
-  font-size: 0.68rem;
-  letter-spacing: 0.18em;
-  color: var(--gold);
-  text-transform: uppercase;
-}
-
-/* SECTIONS */
-
+/* SECTION */
 .section {
-  padding: 5rem 8%;
+  padding: 100px 80px;
+  max-width: 1100px;
 }
 
-.section h2 {
-  font-family: Georgia, serif;
-  font-size: clamp(2rem, 3.2vw, 3.2rem);
-  text-transform: uppercase;
-  margin-bottom: 1rem;
-  color: var(--black);
-}
-
-.section p {
-  max-width: 720px;
-  font-size: 1rem;
-  color: var(--muted);
-}
-
-.intro-section {
-  background: var(--cream);
-}
-
-/* SERVICES */
-
+/* SERVICE GRID */
 .service-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 1.2rem;
-  margin-top: 2rem;
+  gap: 40px;
+  margin-top: 40px;
 }
 
 .service-card {
-  background: var(--white);
-  border: 1px solid rgba(169,130,69,0.3);
-  padding: 1.6rem;
+  border-top: 1px solid #ddd;
+  padding-top: 20px;
 }
 
 .service-card h3 {
-  font-family: Georgia, serif;
-  font-size: 1.4rem;
-  margin-bottom: 0.6rem;
-  color: var(--black);
+  margin-bottom: 10px;
 }
 
-/* CTA */
-
-.dark-cta {
-  background: var(--black);
+/* DARK CTA */
+.dark-section {
+  background: var(--charcoal);
+  color: white;
+  text-align: center;
 }
 
-.dark-cta h2,
-.dark-cta p {
-  color: var(--ivory);
+.dark-section p {
+  color: #ccc;
 }
 
-.light-btn {
-  margin-top: 1.5rem;
-  background: var(--ivory);
-  color: var(--black);
-  border-color: var(--ivory);
-}
-
-/* MOBILE */
-
-@media (max-width: 900px) {
-  .luxury-hero {
-    grid-template-columns: 1fr;
-    padding: 4rem 6%;
-    gap: 2rem;
-  }
-
-  .hero-divider {
-    width: 140px;
-    height: 1px;
-  }
-
-  .hero-copy h1 {
-    font-size: 2.6rem;
-  }
-
-  .hero-actions {
-    flex-direction: column;
-  }
-
-  .luxury-btn,
-  .secondary-btn {
-    width: 100%;
-  }
-
-  .service-grid {
-    grid-template-columns: 1fr;
-  }
-}
-/* FINAL LEDGER & LUXE POLISH */
-
-.luxury-hero {
-  min-height: 76vh;
-  gap: 3rem;
-  padding: 5.5rem 8%;
-}
-
-.hero-copy {
-  max-width: 690px;
-}
-
-.hero-copy h1 {
-  font-size: clamp(2.5rem, 4.2vw, 4.4rem);
-  line-height: 1;
-  letter-spacing: 0.015em;
-}
-
-.hero-description {
-  max-width: 540px;
-  font-size: 0.98rem;
-}
-
-.brand-monogram {
-  font-size: clamp(3.4rem, 5.5vw, 4.7rem);
-}
-
-.hero-divider {
-  height: 145px;
-}
-
-.section {
-  padding: 4.5rem 8%;
-}
-
-.section h2 {
-  font-size: clamp(2rem, 3vw, 3rem);
-  line-height: 1.08;
-}
-
-.service-card {
-  padding: 1.5rem;
-}
-
-.service-card h3 {
-  font-size: 1.35rem;
+.dark-section .btn-primary {
+  background: white;
+  color: var(--charcoal);
 }
