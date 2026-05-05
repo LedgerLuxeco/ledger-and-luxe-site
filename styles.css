@@ -381,3 +381,160 @@ h1 {
     width: 100%;
   }
 }
+/* LUXURY HERO REFINEMENT */
+
+.luxury-hero {
+  min-height: 88vh;
+  display: grid;
+  grid-template-columns: 0.65fr 1px 1.35fr;
+  align-items: center;
+  gap: 4rem;
+  padding: 7rem 8%;
+  background:
+    linear-gradient(
+      90deg,
+      rgba(248, 243, 235, 0.96) 0%,
+      rgba(248, 243, 235, 0.9) 42%,
+      rgba(248, 243, 235, 0.76) 100%
+    ),
+    url("images/ledger-luxe-hero.png");
+  background-size: cover;
+  background-position: center right;
+}
+
+.hero-brand {
+  text-align: center;
+}
+
+.brand-monogram {
+  font-family: Georgia, serif;
+  font-size: clamp(4rem, 8vw, 7rem);
+  line-height: 1;
+  color: var(--gold);
+  letter-spacing: -0.08em;
+  margin-bottom: 1.4rem;
+}
+
+.brand-name {
+  font-family: Georgia, serif;
+  text-transform: uppercase;
+  letter-spacing: 0.28em;
+  font-size: 0.78rem;
+  line-height: 1.7;
+  color: var(--black);
+}
+
+.hero-divider {
+  width: 1px;
+  height: 190px;
+  background: linear-gradient(
+    to bottom,
+    transparent,
+    var(--gold),
+    transparent
+  );
+}
+
+.hero-copy {
+  max-width: 820px;
+  text-align: left;
+}
+
+.hero-copy .eyebrow {
+  margin-bottom: 1.4rem;
+}
+
+.hero-copy h1 {
+  font-family: Georgia, serif;
+  font-size: clamp(3.8rem, 6vw, 6.6rem);
+  line-height: 0.9;
+  font-weight: 400;
+  letter-spacing: 0.025em;
+  text-transform: uppercase;
+  color: var(--black);
+  max-width: 900px;
+}
+
+.hero-description {
+  max-width: 620px;
+  margin-top: 1.6rem;
+  font-size: 1.02rem;
+  line-height: 1.8;
+  color: var(--muted);
+}
+
+.hero-actions {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 2.4rem;
+  flex-wrap: wrap;
+}
+
+.luxury-btn,
+.secondary-btn {
+  min-height: 56px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.secondary-btn {
+  background: rgba(255, 250, 243, 0.45);
+  color: var(--black);
+  border: 1px solid var(--gold);
+}
+
+.secondary-btn:hover {
+  background: var(--gold);
+  color: var(--ivory);
+}
+
+.tagline {
+  margin-top: 2rem;
+  letter-spacing: 0.2em;
+  font-size: 0.75rem;
+}
+
+/* PAGE CALMING */
+.page-hero h1 {
+  font-size: clamp(3rem, 5vw, 5rem);
+}
+
+.section h2 {
+  font-size: clamp(2.4rem, 4vw, 4rem);
+}
+
+/* MOBILE */
+@media (max-width: 900px) {
+  .luxury-hero {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+    padding: 5rem 6%;
+    min-height: auto;
+  }
+
+  .hero-brand {
+    text-align: left;
+  }
+
+  .hero-divider {
+    width: 160px;
+    height: 1px;
+  }
+
+  .hero-copy h1 {
+    font-size: 3.2rem;
+  }
+
+  .hero-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .luxury-btn,
+  .secondary-btn {
+    width: 100%;
+  }
+}
