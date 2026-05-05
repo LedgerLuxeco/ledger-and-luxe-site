@@ -10,70 +10,73 @@
   --black: #111111;
   --charcoal: #2a2926;
   --gold: #a98245;
-  --soft-gold: #c8aa73;
   --muted: #756f66;
   --white: #fffaf3;
 }
+
+/* BASE */
 
 body {
   background: var(--ivory);
   color: var(--charcoal);
   font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
 }
 
+/* HEADER */
+
 .site-header {
-  width: 100%;
   padding: 22px 7%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: rgba(248, 243, 235, 0.96);
-  border-bottom: 1px solid rgba(169, 130, 69, 0.22);
-  position: sticky;
-  top: 0;
-  z-index: 20;
+  border-bottom: 1px solid rgba(169,130,69,0.2);
+  background: var(--ivory);
 }
 
 .logo {
   font-family: Georgia, serif;
   text-transform: uppercase;
   letter-spacing: 0.14em;
-  font-size: 1.05rem;
+  font-size: 1rem;
   color: var(--black);
 }
 
 nav {
   display: flex;
   gap: 24px;
-  flex-wrap: wrap;
 }
 
 nav a {
-  color: var(--charcoal);
   text-decoration: none;
   text-transform: uppercase;
-  letter-spacing: 0.13em;
+  letter-spacing: 0.12em;
   font-size: 0.72rem;
+  color: var(--charcoal);
 }
 
+/* HERO */
+
 .luxury-hero {
-  min-height: 88vh;
+  min-height: 78vh;
   display: grid;
-  grid-template-columns: 0.65fr 1px 1.35fr;
+  grid-template-columns: 0.55fr 1px 1.45fr;
   align-items: center;
-  gap: 4rem;
-  padding: 6.5rem 8%;
+  gap: 3.5rem;
+  padding: 6rem 8%;
   background:
     linear-gradient(
       90deg,
-      rgba(248, 243, 235, 0.97) 0%,
-      rgba(248, 243, 235, 0.91) 45%,
-      rgba(248, 243, 235, 0.78) 100%
+      rgba(248,243,235,0.96),
+      rgba(248,243,235,0.9),
+      rgba(248,243,235,0.78)
     ),
     url("images/ledger-luxe-hero.png");
   background-size: cover;
   background-position: center right;
 }
+
+/* LEFT BRAND */
 
 .hero-brand {
   text-align: center;
@@ -81,79 +84,76 @@ nav a {
 
 .brand-monogram {
   font-family: Georgia, serif;
-  font-size: clamp(4rem, 8vw, 7rem);
-  line-height: 1;
+  font-size: clamp(3.5rem, 6vw, 5rem);
   color: var(--gold);
-  margin-bottom: 1.4rem;
+  margin-bottom: 1rem;
 }
 
 .brand-name {
   font-family: Georgia, serif;
   text-transform: uppercase;
-  letter-spacing: 0.28em;
-  font-size: 0.76rem;
-  line-height: 1.8;
+  letter-spacing: 0.25em;
+  font-size: 0.7rem;
   color: var(--black);
 }
 
+/* DIVIDER */
+
 .hero-divider {
   width: 1px;
-  height: 190px;
+  height: 160px;
   background: linear-gradient(to bottom, transparent, var(--gold), transparent);
 }
 
+/* RIGHT CONTENT */
+
 .hero-copy {
-  max-width: 860px;
-  text-align: left;
+  max-width: 720px;
 }
 
 .eyebrow {
   color: var(--gold);
   text-transform: uppercase;
-  letter-spacing: 0.24em;
-  font-size: 0.74rem;
+  letter-spacing: 0.22em;
+  font-size: 0.7rem;
   font-weight: 700;
-  margin-bottom: 1.25rem;
+  margin-bottom: 1rem;
 }
 
 .hero-copy h1 {
   font-family: Georgia, serif;
-  font-size: clamp(3.4rem, 5.8vw, 6.2rem);
-  line-height: 0.92;
-  font-weight: 400;
-  letter-spacing: 0.025em;
+  font-size: clamp(2.6rem, 4.5vw, 4.6rem);
+  line-height: 0.98;
   text-transform: uppercase;
   color: var(--black);
 }
 
 .hero-description {
-  max-width: 620px;
-  margin-top: 1.55rem;
-  font-size: 1.03rem;
-  line-height: 1.8;
+  margin-top: 1.3rem;
+  font-size: 1rem;
   color: var(--muted);
+  max-width: 560px;
 }
+
+/* BUTTONS */
 
 .hero-actions {
   display: flex;
-  justify-content: flex-start;
-  align-items: center;
   gap: 1rem;
-  margin-top: 2.3rem;
-  flex-wrap: wrap;
+  margin-top: 2rem;
 }
 
 .luxury-btn,
 .secondary-btn {
-  min-height: 56px;
+  height: 52px;
+  padding: 0 1.6rem;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  padding: 1rem 1.8rem;
-  text-decoration: none;
   text-transform: uppercase;
-  letter-spacing: 0.14em;
-  font-size: 0.76rem;
+  letter-spacing: 0.12em;
+  font-size: 0.7rem;
+  text-decoration: none;
   border: 1px solid var(--black);
 }
 
@@ -162,49 +162,37 @@ nav a {
   color: var(--ivory);
 }
 
-.luxury-btn:hover {
-  background: transparent;
-  color: var(--black);
-}
-
 .secondary-btn {
-  background: rgba(255, 250, 243, 0.45);
-  color: var(--black);
+  background: transparent;
   border-color: var(--gold);
-}
-
-.secondary-btn:hover {
-  background: var(--gold);
-  color: var(--ivory);
+  color: var(--black);
 }
 
 .tagline {
-  margin-top: 2rem;
+  margin-top: 1.6rem;
+  font-size: 0.68rem;
+  letter-spacing: 0.18em;
   color: var(--gold);
   text-transform: uppercase;
-  letter-spacing: 0.2em;
-  font-size: 0.74rem;
 }
 
+/* SECTIONS */
+
 .section {
-  padding: 5.5rem 8%;
+  padding: 5rem 8%;
 }
 
 .section h2 {
   font-family: Georgia, serif;
-  font-size: clamp(2.4rem, 4.2vw, 4.4rem);
-  line-height: 1;
-  font-weight: 400;
+  font-size: clamp(2rem, 3.2vw, 3.2rem);
   text-transform: uppercase;
-  letter-spacing: 0.04em;
+  margin-bottom: 1rem;
   color: var(--black);
-  margin-bottom: 1.4rem;
 }
 
 .section p {
-  max-width: 820px;
-  font-size: 1.04rem;
-  line-height: 1.85;
+  max-width: 720px;
+  font-size: 1rem;
   color: var(--muted);
 }
 
@@ -212,34 +200,29 @@ nav a {
   background: var(--cream);
 }
 
-.services-preview {
-  background: var(--ivory);
-}
+/* SERVICES */
 
 .service-grid {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 1.4rem;
-  margin-top: 3rem;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.2rem;
+  margin-top: 2rem;
 }
 
 .service-card {
   background: var(--white);
-  border: 1px solid rgba(169, 130, 69, 0.32);
-  padding: 2rem;
+  border: 1px solid rgba(169,130,69,0.3);
+  padding: 1.6rem;
 }
 
 .service-card h3 {
   font-family: Georgia, serif;
-  font-size: 1.7rem;
-  font-weight: 400;
+  font-size: 1.4rem;
+  margin-bottom: 0.6rem;
   color: var(--black);
-  margin-bottom: 0.9rem;
 }
 
-.service-card p {
-  font-size: 1rem;
-}
+/* CTA */
 
 .dark-cta {
   background: var(--black);
@@ -250,83 +233,33 @@ nav a {
   color: var(--ivory);
 }
 
-.dark-cta .eyebrow {
-  color: var(--soft-gold);
-}
-
 .light-btn {
-  margin-top: 2rem;
+  margin-top: 1.5rem;
   background: var(--ivory);
   color: var(--black);
   border-color: var(--ivory);
 }
 
-.light-btn:hover {
-  background: transparent;
-  color: var(--ivory);
-}
-
-.page-hero {
-  padding-top: 7rem;
-  padding-bottom: 4rem;
-}
-
-.page-hero h1 {
-  font-size: clamp(3rem, 5vw, 5rem);
-}
-
-.luxury-list {
-  margin-top: 2rem;
-  padding-left: 1.2rem;
-  max-width: 760px;
-}
-
-.luxury-list li {
-  margin-bottom: 0.8rem;
-  color: var(--muted);
-  font-size: 1.05rem;
-}
+/* MOBILE */
 
 @media (max-width: 900px) {
-  .site-header {
-    position: static;
-    flex-direction: column;
-    gap: 16px;
-    text-align: center;
-  }
-
-  nav {
-    justify-content: center;
-    gap: 14px;
-  }
-
   .luxury-hero {
     grid-template-columns: 1fr;
-    gap: 2.5rem;
-    padding: 4.5rem 6%;
-    min-height: auto;
-  }
-
-  .hero-brand {
-    text-align: left;
-  }
-
-  .brand-monogram {
-    font-size: 4rem;
+    padding: 4rem 6%;
+    gap: 2rem;
   }
 
   .hero-divider {
-    width: 160px;
+    width: 140px;
     height: 1px;
   }
 
   .hero-copy h1 {
-    font-size: 3rem;
+    font-size: 2.6rem;
   }
 
   .hero-actions {
     flex-direction: column;
-    align-items: stretch;
   }
 
   .luxury-btn,
@@ -337,39 +270,4 @@ nav a {
   .service-grid {
     grid-template-columns: 1fr;
   }
-
-  .section {
-    padding: 4.5rem 6%;
-  }
-}
-/* FIX DUPLICATE / FLOATING BUTTON ISSUE */
-
-.hero-actions {
-  position: static !important;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  gap: 1rem;
-  margin-top: 2rem;
-  flex-wrap: wrap;
-}
-
-.luxury-btn,
-.secondary-btn {
-  position: static !important;
-  width: auto;
-  min-width: 240px;
-}
-
-.section .luxury-btn {
-  margin-top: 2rem;
-}
-
-body::before,
-body::after,
-.hero::before,
-.hero::after,
-.luxury-hero::before,
-.luxury-hero::after {
-  pointer-events: none;
 }
