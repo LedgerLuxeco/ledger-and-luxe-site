@@ -226,3 +226,14 @@ h1 {
     grid-template-columns: 1fr;
   }
 }
+.luxury-list {
+  margin-top: 2rem;
+  padding-left: 1.2rem;
+  max-width: 700px;
+}
+
+.luxury-list li {
+  margin-bottom: 0.8rem;
+  color: var(--muted);
+  font-size: 1.05rem;
+}
