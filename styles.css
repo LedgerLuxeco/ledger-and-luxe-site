@@ -237,3 +237,77 @@ h1 {
   color: var(--muted);
   font-size: 1.05rem;
 }
+.refined-hero {
+  min-height: 82vh;
+  padding-top: 8rem;
+  padding-bottom: 5rem;
+}
+
+.compact-mark h2 {
+  font-size: 4.8rem;
+}
+
+.compact-mark p {
+  font-size: 0.75rem;
+}
+
+.refined-content h1 {
+  font-size: clamp(2.8rem, 5.2vw, 5.4rem);
+  max-width: 900px;
+}
+
+.hero-actions {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+}
+
+.secondary-btn {
+  display: inline-block;
+  padding: 1rem 1.8rem;
+  color: var(--black);
+  border: 1px solid var(--gold);
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  font-size: 0.78rem;
+}
+
+.secondary-btn:hover {
+  background: var(--gold);
+  color: var(--ivory);
+}
+
+.intro-section {
+  background: var(--cream);
+}
+
+.services-preview {
+  background: var(--ivory);
+}
+
+.dark-cta {
+  background: var(--black);
+  color: var(--ivory);
+}
+
+.dark-cta h2,
+.dark-cta p {
+  color: var(--ivory);
+}
+
+.dark-cta .eyebrow {
+  color: var(--soft-gold);
+}
+
+.light-btn {
+  background: var(--ivory);
+  color: var(--black);
+  border-color: var(--ivory);
+}
+
+.light-btn:hover {
+  background: transparent;
+  color: var(--ivory);
+}
