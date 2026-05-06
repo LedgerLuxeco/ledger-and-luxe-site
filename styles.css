@@ -469,11 +469,16 @@ p {
 
 .calendly-section {
   background: var(--cream);
+  padding-top: 4.5rem;
 }
 
 .calendly-wrapper {
-  margin-top: 2.5rem;
+  margin-top: 2rem;
   background: var(--warm-ivory);
   border: 1px solid var(--light-border);
-  padding: 1rem;
+  padding: 0.75rem;
+}
+
+.calendly-inline-widget {
+  min-height: 680px !important;
 }
