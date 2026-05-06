@@ -465,3 +465,15 @@ p {
     width: 100%;
   }
 }
+/* CALENDLY BRANDING SECTION */
+
+.calendly-section {
+  background: var(--cream);
+}
+
+.calendly-wrapper {
+  margin-top: 2.5rem;
+  background: var(--warm-ivory);
+  border: 1px solid var(--light-border);
+  padding: 1rem;
+}
