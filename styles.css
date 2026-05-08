@@ -482,3 +482,128 @@ p {
 .calendly-inline-widget {
   min-height: 680px !important;
 }
+.fit-section {
+  background: #f7f2eb;
+  padding: 90px 24px;
+}
+
+.fit-container {
+  max-width: 1120px;
+  margin: 0 auto;
+}
+
+.fit-section .eyebrow {
+  font-size: 0.78rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #a87a32;
+  margin-bottom: 18px;
+  font-weight: 600;
+}
+
+.fit-section h2 {
+  font-family: "Playfair Display", serif;
+  font-size: clamp(2rem, 4vw, 3.4rem);
+  line-height: 1.1;
+  color: #1f1f1f;
+  max-width: 850px;
+  margin-bottom: 42px;
+  font-weight: 500;
+}
+
+.fit-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+  margin-bottom: 34px;
+}
+
+.fit-card {
+  background: #fffaf3;
+  border: 1px solid rgba(168, 122, 50, 0.18);
+  padding: 34px;
+  border-radius: 2px;
+}
+
+.fit-card h3 {
+  font-family: "Playfair Display", serif;
+  font-size: 1.5rem;
+  margin-bottom: 18px;
+  color: #1f1f1f;
+  font-weight: 500;
+}
+
+.fit-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.fit-card li {
+  position: relative;
+  padding-left: 24px;
+  margin-bottom: 14px;
+  color: #3d3a36;
+  line-height: 1.6;
+}
+
+.fit-card li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #a87a32;
+}
+
+.fit-note {
+  background: #1f1f1f;
+  color: #f7f2eb;
+  padding: 34px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 28px;
+}
+
+.fit-note p {
+  margin: 0;
+  max-width: 760px;
+  line-height: 1.7;
+  color: #f7f2eb;
+}
+
+.fit-button {
+  display: inline-block;
+  white-space: nowrap;
+  color: #1f1f1f;
+  background: #c89b4b;
+  padding: 14px 22px;
+  text-decoration: none;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-size: 0.78rem;
+  font-weight: 600;
+}
+
+.fit-button:hover {
+  background: #d7ae63;
+}
+
+@media (max-width: 768px) {
+  .fit-section {
+    padding: 64px 20px;
+  }
+
+  .fit-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .fit-note {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .fit-button {
+    width: 100%;
+    text-align: center;
+  }
+}
