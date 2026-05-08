@@ -642,27 +642,7 @@ p {
   object-position: center !important;
   display: block;
 }
-/* Founder photo override */
-.founder-section .founder-image {
-  max-width: 420px !important;
-  margin-left: auto;
-  height: auto !important;
-  aspect-ratio: auto !important;
-  overflow: visible !important;
-  background: #fffaf3;
-  border: 1px solid rgba(168, 122, 50, 0.18);
-  padding: 14px;
-}
 
-.founder-section .founder-image img {
-  width: 100% !important;
-  height: auto !important;
-  max-height: none !important;
-  aspect-ratio: auto !important;
-  object-fit: contain !important;
-  object-position: center !important;
-  display: block !important;
-}
 .site-footer {
   padding: 36px 24px;
   text-align: center;
