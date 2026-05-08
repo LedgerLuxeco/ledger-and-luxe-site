@@ -626,32 +626,15 @@ p {
 }
 
 .founder-image {
-  max-width: 460px;
+  max-width: 430px;
   margin-left: auto;
-  padding: 18px;
-  background: #fffaf3;
 }
 
 .founder-image img {
   width: 100%;
-  height: auto;
-  max-height: none;
-  object-fit: contain;
-  object-position: center;
+  height: auto !important;
+  max-height: none !important;
+  object-fit: contain !important;
+  object-position: center !important;
   display: block;
-}
-
-@media (max-width: 900px) {
-  .founder-section .section-inner.split {
-    gap: 40px;
-  }
-
-  .founder-image {
-    max-width: 100%;
-    margin-left: 0;
-  }
-
-  .founder-section h2 {
-    font-size: clamp(2.2rem, 10vw, 3.4rem);
-  }
 }
