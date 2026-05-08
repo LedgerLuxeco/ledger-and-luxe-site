@@ -607,3 +607,14 @@ p {
     text-align: center;
   }
 }
+.founder-section {
+  background: #fffaf3;
+}
+
+.founder-image img {
+  width: 100%;
+  height: auto;
+  max-height: 620px;
+  object-fit: cover;
+  object-position: center;
+}
