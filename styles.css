@@ -483,6 +483,7 @@ p {
   min-height: 680px !important;
 }
 .fit-section {
+   display: none;
   background: #f7f2eb;
   padding: 90px 24px;
 }
