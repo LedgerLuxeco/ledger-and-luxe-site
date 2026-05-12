@@ -781,18 +781,19 @@ p {
 }
 
 .calendly-wrapper {
-  margin-top: 1.5rem;
+  margin-top: 1.75rem;
   background: #ffffff;
   border: 1px solid var(--light-border);
   padding: 0.5rem;
   overflow: hidden;
+  height: 980px;
 }
 
 .calendly-inline-widget {
-  width: 100%;
-  min-width: 320px;
-  height: 760px;
-  min-height: 760px !important;
+  width: 100% !important;
+  min-width: 320px !important;
+  height: 980px !important;
+  min-height: 980px !important;
 }
 /* Contact page polish */
 .calendly-section .section-inner.narrow {
