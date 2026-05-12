@@ -1290,41 +1290,4 @@ p {
     flex-wrap: wrap !important;
     gap: 14px !important;
   }
-}
-/* =========================
-   HEADER SPACING FINAL FIX
-========================= */
 
-.site-header {
-  padding: 18px 0 !important;
-}
-
-.site-header .header-inner {
-  width: min(1180px, calc(100% - 180px)) !important;
-  max-width: 1180px !important;
-  margin: 0 auto !important;
-  display: flex !important;
-  justify-content: space-between !important;
-  align-items: center !important;
-  gap: 48px !important;
-}
-
-.site-header .logo {
-  margin-left: 0 !important;
-  align-items: flex-start !important;
-  text-align: left !important;
-  flex-shrink: 0 !important;
-}
-
-.site-header .nav {
-  margin-left: auto !important;
-  display: flex !important;
-  justify-content: flex-end !important;
-  align-items: center !important;
-  gap: 24px !important;
-  flex-wrap: nowrap !important;
-}
-
-.site-header .nav a {
-  white-space: nowrap !important;
-}
