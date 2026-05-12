@@ -40,7 +40,7 @@ img {
 .site-header {
   background: rgba(247, 244, 239, 0.96);
   border-bottom: 1px solid var(--light-border);
-  padding: 20px 12%;
+  padding: 18px 32px;
   position: sticky;
   top: 0;
   z-index: 50;
@@ -48,12 +48,12 @@ img {
 
 .header-inner {
   width: 100%;
-  max-width: 1100px;
+  max-width: 1180px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 3rem;
+  gap: 40px;
 }
 
 .logo {
@@ -64,14 +64,14 @@ img {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  line-height: 1;
   text-align: left;
+  line-height: 1;
   flex-shrink: 0;
 }
 
 .logo span {
-  letter-spacing: 0.18em;
-  font-size: 1.05rem;
+  letter-spacing: 0.16em;
+  font-size: 1rem;
   color: var(--charcoal);
   white-space: nowrap;
 }
@@ -83,8 +83,8 @@ img {
 
 .logo small {
   margin-top: 0.32rem;
-  letter-spacing: 0.32em;
-  font-size: 0.52rem;
+  letter-spacing: 0.28em;
+  font-size: 0.5rem;
   font-family: "Inter", Arial, sans-serif;
   color: var(--gold);
   white-space: nowrap;
@@ -94,17 +94,17 @@ img {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  gap: clamp(18px, 2vw, 30px);
-  flex-wrap: nowrap;
+  gap: 22px;
   margin-left: auto;
+  flex-wrap: nowrap;
 }
 
 .nav a {
   text-decoration: none;
   color: var(--charcoal);
   text-transform: uppercase;
-  letter-spacing: 0.12em;
-  font-size: 0.72rem;
+  letter-spacing: 0.11em;
+  font-size: 0.7rem;
   white-space: nowrap;
 }
 
@@ -444,8 +444,8 @@ p {
 ========================= */
 
 @media (max-width: 900px) {
-  .site-header {
-  padding: 20px 6%;
+.site-header {
+  padding: 18px 24px;
 }
 
 .header-inner {
@@ -459,13 +459,13 @@ p {
 }
 
 .logo span {
-  font-size: 1.05rem;
-  letter-spacing: 0.16em;
+  font-size: 1rem;
+  letter-spacing: 0.14em;
 }
 
 .logo small {
-  font-size: 0.5rem;
-  letter-spacing: 0.28em;
+  font-size: 0.48rem;
+  letter-spacing: 0.24em;
 }
 
 .nav {
@@ -1270,24 +1270,4 @@ p {
 .engagement-factors-section .eyebrow {
   margin-bottom: 1rem;
 }
-
-/* Mobile header */
-@media (max-width: 900px) {
-  .header-inner {
-    flex-direction: column !important;
-    justify-content: center !important;
-    gap: 16px !important;
-  }
-
-  .logo {
-    align-items: center !important;
-    text-align: center !important;
-  }
-
-  .nav {
-    margin-left: 0 !important;
-    justify-content: center !important;
-    flex-wrap: wrap !important;
-    gap: 14px !important;
-  }
 
