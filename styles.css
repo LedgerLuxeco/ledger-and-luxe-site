@@ -863,7 +863,7 @@ p {
   }
 }
 /* =========================
-   CONTACT PAGE FINAL LAYOUT
+   CONTACT PAGE FINAL CLEAN LAYOUT
 ========================= */
 
 .contact-inner {
@@ -896,25 +896,37 @@ p {
   margin-top: 1.75rem;
 }
 
+.contact-form label {
+  display: block;
+  margin-bottom: 0.35rem;
+  color: var(--charcoal);
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.13em;
+  font-weight: 600;
+}
+
 .contact-form input,
 .contact-form textarea {
-  background: #ffffff;
-}
-
-.calendly-wrapper {
-  margin-top: 1.75rem;
-  background: #ffffff;
+  width: 100%;
+  padding: 1rem;
+  margin-bottom: 1rem;
   border: 1px solid var(--light-border);
-  padding: 0.5rem;
-  overflow: hidden;
-  height: 820px;
+  background: #ffffff;
+  font-family: "Inter", Arial, sans-serif;
+  font-size: 0.95rem;
+  color: var(--charcoal);
 }
 
-.calendly-inline-widget {
-  width: 100% !important;
-  min-width: 320px !important;
-  height: 820px !important;
-  min-height: 820px !important;
+.contact-form textarea {
+  min-height: 170px;
+  resize: vertical;
+}
+
+.contact-form button {
+  border: none;
+  cursor: pointer;
+  width: 100%;
 }
 
 .form-note {
@@ -923,22 +935,40 @@ p {
   border-top: 1px solid var(--light-border);
   text-align: left;
   max-width: 100%;
+  color: var(--taupe);
+  font-size: 0.78rem;
+  line-height: 1.6;
+}
+
+.calendly-wrapper {
+  margin-top: 1.75rem;
+  background: #ffffff;
+  border: 1px solid var(--light-border);
+  padding: 0.5rem;
+  overflow: hidden;
+  height: 560px !important;
+  max-height: 560px !important;
+}
+
+.calendly-inline-widget,
+.ll-calendly-widget {
+  width: 100% !important;
+  min-width: 320px !important;
+  height: 560px !important;
+  min-height: 560px !important;
+  max-height: 560px !important;
 }
 
 @media (max-width: 1050px) {
   .contact-grid {
     grid-template-columns: 1fr;
   }
-}
-/* FINAL Calendly size override */
-.compact-calendly {
-  height: 650px !important;
-  max-height: 650px !important;
-  overflow: hidden !important;
-}
 
-.compact-calendly .ll-calendly-widget {
-  height: 650px !important;
-  min-height: 650px !important;
-  max-height: 650px !important;
+  .calendly-wrapper,
+  .calendly-inline-widget,
+  .ll-calendly-widget {
+    height: 620px !important;
+    min-height: 620px !important;
+    max-height: 620px !important;
+  }
 }
