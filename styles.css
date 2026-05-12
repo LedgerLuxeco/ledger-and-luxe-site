@@ -26,13 +26,13 @@ body {
   color: var(--charcoal);
   font-family: "Inter", Arial, sans-serif;
   line-height: 1.6;
+  overflow-x: hidden;
 }
 
 img {
   max-width: 100%;
   display: block;
 }
-
 /* =========================
    HEADER
 ========================= */
@@ -40,20 +40,19 @@ img {
 .site-header {
   background: rgba(247, 244, 239, 0.96);
   border-bottom: 1px solid var(--light-border);
-  padding: 20px 56px;
   position: sticky;
   top: 0;
   z-index: 50;
 }
 
 .header-inner {
-  width: 100%;
-  max-width: 1360px;
+  width: min(1180px, calc(100% - 48px));
   margin: 0 auto;
-  display: grid;
-  grid-template-columns: auto 1fr;
+  padding: 18px 0;
+  display: flex;
+  justify-content: space-between;
   align-items: center;
-  gap: 48px;
+  gap: 32px;
 }
 
 .logo {
@@ -61,16 +60,17 @@ img {
   text-transform: uppercase;
   color: var(--charcoal);
   text-decoration: none;
-  display: inline-flex;
+  display: flex;
   flex-direction: column;
   align-items: flex-start;
   text-align: left;
   line-height: 1;
+  flex-shrink: 0;
 }
 
 .logo span {
-  letter-spacing: 0.16em;
-  font-size: 1rem;
+  letter-spacing: 0.15em;
+  font-size: 0.95rem;
   color: var(--charcoal);
   white-space: nowrap;
 }
@@ -81,9 +81,9 @@ img {
 }
 
 .logo small {
-  margin-top: 0.32rem;
-  letter-spacing: 0.28em;
-  font-size: 0.5rem;
+  margin-top: 0.3rem;
+  letter-spacing: 0.26em;
+  font-size: 0.48rem;
   font-family: "Inter", Arial, sans-serif;
   color: var(--gold);
   white-space: nowrap;
@@ -93,16 +93,17 @@ img {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  gap: 28px;
-  flex-wrap: nowrap;
+  gap: clamp(14px, 1.6vw, 24px);
+  margin-left: auto;
+  flex-wrap: wrap;
 }
 
 .nav a {
   text-decoration: none;
   color: var(--charcoal);
   text-transform: uppercase;
-  letter-spacing: 0.11em;
-  font-size: 0.7rem;
+  letter-spacing: 0.1em;
+  font-size: 0.68rem;
   white-space: nowrap;
 }
 
