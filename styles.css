@@ -1243,3 +1243,11 @@ p {
     padding: 1.75rem;
   }
 }
+/* Tighten spacing after pricing cards */
+.engagement-factors-section {
+  padding-top: 2.5rem;
+}
+
+.investment-disclaimer {
+  margin-bottom: 0;
+}
