@@ -40,7 +40,7 @@ img {
 .site-header {
   background: rgba(247, 244, 239, 0.96);
   border-bottom: 1px solid var(--light-border);
-  padding: 18px 32px;
+  padding: 20px 56px;
   position: sticky;
   top: 0;
   z-index: 50;
@@ -48,12 +48,12 @@ img {
 
 .header-inner {
   width: 100%;
-  max-width: 1180px;
+  max-width: 1360px;
   margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: auto 1fr;
   align-items: center;
-  gap: 40px;
+  gap: 48px;
 }
 
 .logo {
@@ -61,12 +61,11 @@ img {
   text-transform: uppercase;
   color: var(--charcoal);
   text-decoration: none;
-  display: flex;
+  display: inline-flex;
   flex-direction: column;
   align-items: flex-start;
   text-align: left;
   line-height: 1;
-  flex-shrink: 0;
 }
 
 .logo span {
@@ -94,8 +93,7 @@ img {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  gap: 22px;
-  margin-left: auto;
+  gap: 28px;
   flex-wrap: nowrap;
 }
 
