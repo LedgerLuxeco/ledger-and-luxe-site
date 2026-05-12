@@ -1263,3 +1263,107 @@ p {
 .engagement-factors-section .eyebrow {
   margin-bottom: 1rem;
 }
+/* =========================
+   FINAL HEADER FIX
+   Logo left / nav right
+========================= */
+
+.site-header {
+  background: rgba(247, 244, 239, 0.96);
+  border-bottom: 1px solid var(--light-border);
+  padding: 18px 7%;
+  position: sticky;
+  top: 0;
+  z-index: 50;
+}
+
+.header-inner {
+  max-width: 1240px;
+  margin: 0 auto;
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+  gap: 3rem;
+}
+
+.logo {
+  font-family: "Playfair Display", Georgia, serif;
+  text-transform: uppercase;
+  color: var(--charcoal);
+  text-decoration: none;
+  display: flex !important;
+  flex-direction: column;
+  align-items: flex-start !important;
+  line-height: 1;
+  text-align: left !important;
+  flex-shrink: 0;
+}
+
+.logo span {
+  letter-spacing: 0.18em;
+  font-size: 1.05rem;
+  color: var(--charcoal);
+  white-space: nowrap;
+}
+
+.logo em {
+  font-style: normal;
+  color: var(--gold);
+}
+
+.logo small {
+  margin-top: 0.32rem;
+  letter-spacing: 0.32em;
+  font-size: 0.52rem;
+  font-family: "Inter", Arial, sans-serif;
+  color: var(--gold);
+  white-space: nowrap;
+}
+
+.nav {
+  display: flex !important;
+  justify-content: flex-end !important;
+  align-items: center;
+  gap: 24px;
+  flex-wrap: nowrap;
+  margin-left: auto;
+}
+
+.nav a {
+  text-decoration: none;
+  color: var(--charcoal);
+  text-transform: uppercase;
+  letter-spacing: 0.13em;
+  font-size: 0.72rem;
+  white-space: nowrap;
+}
+
+/* Header mobile/tablet fix */
+@media (max-width: 900px) {
+  .header-inner {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .logo {
+    align-items: center !important;
+    text-align: center !important;
+  }
+
+  .logo span {
+    font-size: 1.05rem;
+    letter-spacing: 0.16em;
+  }
+
+  .logo small {
+    font-size: 0.5rem;
+    letter-spacing: 0.28em;
+  }
+
+  .nav {
+    justify-content: center !important;
+    flex-wrap: wrap;
+    gap: 14px;
+    margin-left: 0;
+  }
+}
