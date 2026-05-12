@@ -972,3 +972,92 @@ p {
     max-height: 700px !important;
   }
 }
+/* =========================
+   MOBILE CONTACT PAGE FIX
+========================= */
+
+@media (max-width: 768px) {
+  .contact-inner {
+    max-width: 100%;
+  }
+
+  .contact-grid {
+    display: grid;
+    grid-template-columns: 1fr !important;
+    gap: 1.75rem;
+    margin-top: 2rem;
+  }
+
+  .contact-form-card,
+  .calendly-block {
+    padding: 1.35rem;
+    width: 100%;
+  }
+
+  .calendly-section h2 {
+    font-size: clamp(2.2rem, 12vw, 3.1rem);
+    line-height: 1.02;
+  }
+
+  .calendly-section h3 {
+    font-size: 1.45rem;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    font-size: 1rem;
+    padding: 0.95rem;
+  }
+
+  .contact-form textarea {
+    min-height: 150px;
+  }
+
+  .form-note {
+    font-size: 0.76rem;
+    line-height: 1.55;
+  }
+
+  .calendly-wrapper {
+    height: 680px !important;
+    max-height: 680px !important;
+    padding: 0;
+    overflow: hidden;
+  }
+
+  .calendly-inline-widget,
+  .ll-calendly-widget {
+    height: 680px !important;
+    min-height: 680px !important;
+    max-height: 680px !important;
+    min-width: 100% !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .section {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  .contact-form-card,
+  .calendly-block {
+    padding: 1.15rem;
+  }
+
+  .calendly-section h2 {
+    font-size: 2.35rem;
+  }
+
+  .calendly-wrapper {
+    height: 640px !important;
+    max-height: 640px !important;
+  }
+
+  .calendly-inline-widget,
+  .ll-calendly-widget {
+    height: 640px !important;
+    min-height: 640px !important;
+    max-height: 640px !important;
+  }
+}
