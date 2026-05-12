@@ -1245,9 +1245,21 @@ p {
 }
 /* Tighten spacing after pricing cards */
 .engagement-factors-section {
-  padding-top: 2.5rem;
+  padding-top: 2rem;
 }
 
 .investment-disclaimer {
   margin-bottom: 0;
+}
+/* Fix Investment page spacing */
+.investment-tiers {
+  padding-bottom: 2rem;
+}
+
+.engagement-factors-section {
+  padding-top: 1.5rem;
+}
+
+.engagement-factors-section .eyebrow {
+  margin-bottom: 1rem;
 }
