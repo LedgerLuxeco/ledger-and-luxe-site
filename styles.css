@@ -64,7 +64,14 @@ img {
   align-items: center;
   line-height: 1;
 }
+.logo em {
+  font-style: normal;
+  color: var(--gold);
+}
 
+.logo small {
+  color: var(--gold);
+}
 .logo span {
   letter-spacing: 0.18em;
   font-size: 1.05rem;
