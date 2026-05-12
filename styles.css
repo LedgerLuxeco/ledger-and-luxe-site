@@ -930,3 +930,15 @@ p {
     grid-template-columns: 1fr;
   }
 }
+/* FINAL Calendly size override */
+.compact-calendly {
+  height: 650px !important;
+  max-height: 650px !important;
+  overflow: hidden !important;
+}
+
+.compact-calendly .ll-calendly-widget {
+  height: 650px !important;
+  min-height: 650px !important;
+  max-height: 650px !important;
+}
