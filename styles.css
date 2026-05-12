@@ -57,10 +57,25 @@ img {
 .logo {
   font-family: "Playfair Display", Georgia, serif;
   text-transform: uppercase;
-  letter-spacing: 0.16em;
-  font-size: 1.05rem;
   color: var(--charcoal);
   text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 1;
+}
+
+.logo span {
+  letter-spacing: 0.18em;
+  font-size: 1.05rem;
+}
+
+.logo small {
+  margin-top: 0.32rem;
+  letter-spacing: 0.32em;
+  font-size: 0.52rem;
+  font-family: "Inter", Arial, sans-serif;
+}
 }
 
 .nav {
