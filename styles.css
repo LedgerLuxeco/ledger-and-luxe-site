@@ -1195,7 +1195,6 @@ p {
   color: var(--taupe);
 }
 
-/* Mobile pricing */
 @media (max-width: 950px) {
   .pricing-grid {
     grid-template-columns: 1fr;
