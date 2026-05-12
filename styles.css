@@ -794,3 +794,41 @@ p {
   height: 760px;
   min-height: 760px !important;
 }
+/* Contact page polish */
+.calendly-section .section-inner.narrow {
+  max-width: 980px;
+}
+
+.contact-form-card {
+  margin-top: 3rem;
+  padding: 2.5rem;
+}
+
+.contact-form-card > p:not(.eyebrow):not(.form-note),
+.calendly-block > p:not(.eyebrow) {
+  max-width: 760px;
+  margin-bottom: 1.8rem;
+}
+
+.contact-form {
+  margin-top: 2rem;
+}
+
+.form-note {
+  margin-top: 1.75rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--light-border);
+}
+
+.calendly-block {
+  margin-top: 4rem;
+  padding: 2.5rem;
+}
+
+.calendly-block h3 {
+  margin-bottom: 0.7rem;
+}
+
+.calendly-wrapper {
+  margin-top: 2rem;
+}
