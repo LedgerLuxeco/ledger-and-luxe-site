@@ -1268,3 +1268,88 @@ p {
 .engagement-factors-section .eyebrow {
   margin-bottom: 1rem;
 }
+/* =========================
+   TRUE FINAL HEADER LAYOUT
+   Logo left / nav right
+========================= */
+
+.site-header {
+  padding: 18px 6% !important;
+}
+
+.header-inner {
+  width: 100% !important;
+  max-width: 1240px !important;
+  margin: 0 auto !important;
+  display: flex !important;
+  flex-direction: row !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+  gap: 3rem !important;
+}
+
+.logo {
+  grid-column: auto !important;
+  margin: 0 !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: flex-start !important;
+  text-align: left !important;
+  flex: 0 0 auto !important;
+}
+
+.logo span {
+  font-size: 1.05rem !important;
+  letter-spacing: 0.18em !important;
+  white-space: nowrap !important;
+}
+
+.logo em {
+  font-style: normal !important;
+  color: var(--gold) !important;
+}
+
+.logo small {
+  color: var(--gold) !important;
+  font-size: 0.52rem !important;
+  letter-spacing: 0.32em !important;
+  margin-top: 0.32rem !important;
+  white-space: nowrap !important;
+}
+
+.nav {
+  grid-column: auto !important;
+  margin-left: auto !important;
+  display: flex !important;
+  justify-content: flex-end !important;
+  align-items: center !important;
+  gap: 24px !important;
+  flex-wrap: nowrap !important;
+}
+
+.nav a {
+  white-space: nowrap !important;
+  font-size: 0.72rem !important;
+  letter-spacing: 0.13em !important;
+}
+
+/* Mobile header */
+@media (max-width: 900px) {
+  .header-inner {
+    flex-direction: column !important;
+    justify-content: center !important;
+    gap: 16px !important;
+  }
+
+  .logo {
+    align-items: center !important;
+    text-align: center !important;
+  }
+
+  .nav {
+    margin-left: 0 !important;
+    justify-content: center !important;
+    flex-wrap: wrap !important;
+    gap: 14px !important;
+  }
+}
