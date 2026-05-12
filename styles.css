@@ -716,108 +716,21 @@ p {
   line-height: 1.6;
   text-align: center;
 }
-.contact-options {
-  display: grid;
-  grid-template-columns: 1.1fr 0.9fr;
-  gap: 2rem;
-  margin-top: 2.5rem;
-  align-items: start;
-}
-
-.contact-option-card {
-  background: var(--warm-ivory);
-  border: 1px solid var(--light-border);
-  padding: 2rem;
-}
-
-.contact-option-card h3 {
-  margin-bottom: 0.8rem;
-}
-
-.contact-option-card p {
-  margin-bottom: 1.2rem;
-}
-
-.contact-form label {
-  display: block;
-  margin-bottom: 0.35rem;
-  color: var(--charcoal);
-  font-size: 0.78rem;
-  text-transform: uppercase;
-  letter-spacing: 0.12em;
-}
-
-.contact-form input,
-.contact-form textarea {
-  width: 100%;
-  padding: 1rem;
-  margin-bottom: 1rem;
-  border: 1px solid var(--light-border);
-  background: #ffffff;
-  font-family: "Inter", Arial, sans-serif;
-  font-size: 0.95rem;
-  color: var(--charcoal);
-}
-
-.contact-form textarea {
-  min-height: 160px;
-  resize: vertical;
-}
-
-.contact-form button {
-  border: none;
-  cursor: pointer;
-  width: 100%;
-}
-
-@media (max-width: 900px) {
-  .contact-options {
-    grid-template-columns: 1fr;
-  }
-}
 /* =========================
-   CONTACT PAGE TWO-COLUMN LAYOUT
+   CONTACT PAGE SAFE LAYOUT
 ========================= */
 
-.contact-options {
-  display: grid;
-  grid-template-columns: minmax(0, 1.15fr) minmax(340px, 0.85fr);
-  gap: 2rem;
-  margin-top: 2.75rem;
-  align-items: start;
-}
-
-.contact-option-card {
+.contact-form-card,
+.calendly-block {
   background: var(--warm-ivory);
   border: 1px solid var(--light-border);
   padding: 2rem;
+  margin-top: 2rem;
 }
 
-.contact-option-card .eyebrow {
-  margin-bottom: 0.75rem;
-}
-
-.contact-option-card h3 {
+.contact-form-card h3,
+.calendly-block h3 {
   margin-bottom: 0.8rem;
-}
-
-.contact-option-card > p {
-  margin-bottom: 1.4rem;
-}
-
-.calendly-wrapper {
-  margin-top: 1.5rem;
-  background: #ffffff;
-  border: 1px solid var(--light-border);
-  padding: 0.5rem;
-  overflow: hidden;
-}
-
-.calendly-inline-widget {
-  width: 100%;
-  min-width: 320px;
-  height: 760px;
-  min-height: 760px !important;
 }
 
 .contact-form {
@@ -867,13 +780,17 @@ p {
   text-align: left;
 }
 
-@media (max-width: 1000px) {
-  .contact-options {
-    grid-template-columns: 1fr;
-  }
+.calendly-wrapper {
+  margin-top: 1.5rem;
+  background: #ffffff;
+  border: 1px solid var(--light-border);
+  padding: 0.5rem;
+  overflow: hidden;
+}
 
-  .calendly-inline-widget {
-    height: 700px;
-    min-height: 700px !important;
-  }
+.calendly-inline-widget {
+  width: 100%;
+  min-width: 320px;
+  height: 760px;
+  min-height: 760px !important;
 }
