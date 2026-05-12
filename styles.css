@@ -444,12 +444,18 @@ p {
 
 @media (max-width: 900px) {
 .site-header {
-  padding: 18px 24px;
+  position: static;
+  padding: 0;
 }
 
 .header-inner {
+  width: calc(100% - 32px);
+  padding: 16px 0 18px;
+  display: flex;
   flex-direction: column;
-  gap: 16px;
+  justify-content: center;
+  align-items: center;
+  gap: 14px;
 }
 
 .logo {
@@ -458,20 +464,26 @@ p {
 }
 
 .logo span {
-  font-size: 1rem;
+  font-size: 0.95rem;
   letter-spacing: 0.14em;
 }
 
 .logo small {
-  font-size: 0.48rem;
+  font-size: 0.46rem;
   letter-spacing: 0.24em;
 }
 
 .nav {
+  width: 100%;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 14px;
+  gap: 10px 18px;
   margin-left: 0;
+}
+
+.nav a {
+  font-size: 0.68rem;
+  letter-spacing: 0.1em;
 }
   .home-hero {
     padding: 4rem 6%;
