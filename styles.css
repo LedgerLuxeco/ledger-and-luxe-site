@@ -861,3 +861,70 @@ p {
     min-height: 700px !important;
   }
 }
+/* =========================
+   CONTACT PAGE FINAL LAYOUT
+========================= */
+
+.contact-inner {
+  max-width: 1240px;
+  margin: 0 auto;
+}
+
+.contact-inner > p {
+  max-width: 760px;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: minmax(360px, 0.9fr) minmax(560px, 1.1fr);
+  gap: 2.5rem;
+  align-items: start;
+  margin-top: 3rem;
+}
+
+.contact-form-card,
+.calendly-block {
+  background: var(--warm-ivory);
+  border: 1px solid var(--light-border);
+  padding: 2.25rem;
+  margin-top: 0 !important;
+}
+
+.contact-form {
+  max-width: 100%;
+  margin-top: 1.75rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+  background: #ffffff;
+}
+
+.calendly-wrapper {
+  margin-top: 1.75rem;
+  background: #ffffff;
+  border: 1px solid var(--light-border);
+  padding: 0.5rem;
+  overflow: hidden;
+}
+
+.calendly-inline-widget {
+  width: 100% !important;
+  min-width: 320px !important;
+  height: 720px !important;
+  min-height: 720px !important;
+}
+
+.form-note {
+  margin-top: 1.5rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--light-border);
+  text-align: left;
+  max-width: 100%;
+}
+
+@media (max-width: 1050px) {
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+}
