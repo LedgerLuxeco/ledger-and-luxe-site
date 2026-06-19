@@ -1373,15 +1373,15 @@ p {
 }
 
 .site-header .logo img {
-  width: 150px !important;
+  width: 185px !important;
   height: auto !important;
-  max-height: 64px !important;
+  max-height: 82px !important;
   display: block !important;
 }
 
 @media (max-width: 900px) {
   .site-header .logo img {
-    width: 130px !important;
-    max-height: 58px !important;
+    width: 155px !important;
+max-height: 70px !important;
   }
 }
