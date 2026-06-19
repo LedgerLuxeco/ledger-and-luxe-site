@@ -1374,16 +1374,17 @@ p {
 
 .site-header .logo img {
   display: block !important;
-  width: 100px !important;
-  height: auto !important;
+  width: 120px !important;
+  height: 120px !important;
+  object-fit: contain !important;
+  max-width: none !important;
   max-height: none !important;
 }
 
 @media (max-width: 900px) {
-
-.site-header .logo img {
-  width: 100px !important;
-  max-height: none !important;
-}
-
+  .site-header .logo img {
+    width: 100px !important;
+    height: 100px !important;
+    object-fit: contain !important;
+  }
 }
