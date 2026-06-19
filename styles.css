@@ -99,7 +99,11 @@ img {
   color: var(--gold);
   white-space: nowrap;
 }
-
+.logo img {
+  display: block;
+  width: 90px;
+  height: auto;
+}
 .nav {
   display: flex;
   justify-content: flex-end;
