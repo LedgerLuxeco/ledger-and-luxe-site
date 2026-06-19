@@ -1361,3 +1361,27 @@ p {
     padding-top: 4px !important;
   }
 }
+/* =========================
+   FINAL LOGO IMAGE OVERRIDE
+========================= */
+
+.site-header .logo {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: flex-start !important;
+  text-decoration: none !important;
+}
+
+.site-header .logo img {
+  width: 150px !important;
+  height: auto !important;
+  max-height: 64px !important;
+  display: block !important;
+}
+
+@media (max-width: 900px) {
+  .site-header .logo img {
+    width: 130px !important;
+    max-height: 58px !important;
+  }
+}
